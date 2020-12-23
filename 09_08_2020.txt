@@ -1,0 +1,18 @@
+Dear Chris
+
+Hello Professor, I hope this mail finds you well and healthy. I apologize for the late response. I successfully ran the deisotoping function on the original data. 
+
+After some debugging I completed the function to erase the peaks given given the distance condition.  The output that I get has a similar structure as the original data. 
+
+- First object is a data frame with information about each entry with columns 'sequence', 'charge', 'First.Scan' (from SEQUEST dataset) and 'precursorMZ' (extracted from 'Headers').
+
+- Second object is the list of matrices after deleting peaks with the given condition.
+
+- As with the original data, each row on the data frame corresponds to a matrix in the second object.
+
+My function didn't have any issues working with the dataset after running the deisotoping function. 
+
+I'm loosing the name of the rows after running Deisotope
+Returns a data frame and not a matrix
+
+I wanted to ask you if I should do the scaling, log transform, mean 0 before running the function I wrote (the one which delete peaks) OR after it?
